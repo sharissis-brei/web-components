@@ -1,0 +1,61 @@
+#cu_nav_domain {
+	&.cu_nav_selectable {
+	  .selected > a.cu_nav_button {
+	    background-color: $white;
+	    svg * {
+	      display: none;
+	    }
+	  }
+	  &.expanded .selected > a.cu_nav_button {
+	    background-image: none;
+	    svg * {
+	      display: block;
+	    }
+	  }
+	}
+	&.expanded {
+		li {
+			&.selected a {
+				@include bp(wildcard-max, 980px) {
+					width: 175px;
+          color: #404040;
+				}
+			}
+			a {
+				@include bp(wildcard-max, 980px) {
+					width: 100% !important;
+				}
+			}
+			@include bp(wildcard-max, 980px) {
+				width: 100% !important;
+			}
+		}
+		@include bp(wildcard-max, 980px) {
+			overflow: visible;
+      max-width: 999px;
+      width: 100% !important;
+      position: absolute !important;
+      top: 0;
+      left: 0;
+      z-index: 99500 !important;
+		}
+	}
+	li {
+		&.selected a {
+			@include bp(wildcard-max, 980px) {
+				width: 55px;
+        color: $white;
+			}
+		}
+		a {
+			@include bp(wildcard-max, 980px) {
+				width: 175px;
+        color: #404040;
+			}
+		}
+	}
+	@include bp(wildcard-max, 980px) {
+		max-width: 55px;
+    overflow: hidden;
+	}
+}
