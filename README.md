@@ -14,6 +14,7 @@ View the demo website here: http://chapmanu.github.io/web-components/.
 * Git command-line client  
 * Ruby - https://www.ruby-lang.org/en/  
 * Ruby Gems - https://rubygems.org/pages/download  
+* Bundler - http://bundler.io/
 
 ### Initial Setup
 
