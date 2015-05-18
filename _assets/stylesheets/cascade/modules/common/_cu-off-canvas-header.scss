@@ -1,0 +1,17 @@
+.cu-off-canvas-header {
+	position: relative;
+	background-color: $cu-light-grey;
+	padding: 1em;
+
+	img {
+		max-width: 85%;
+	}
+
+	.close {
+		position: absolute;
+		top: 0;
+		right: 0;
+		padding: 1.5em;
+	}
+
+}

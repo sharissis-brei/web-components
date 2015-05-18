@@ -83,6 +83,7 @@ a {
   // color: #00e;
   color: $cu-dark-red;
   text-decoration: none;
+  outline: 0;
   &:visited {
     // color: #551a8b;
     color: $cu-red;
@@ -98,7 +99,7 @@ a {
   &:focus {
     outline: thin dotted;
   }
-  &:hover, &:active {
+  &:hover, &:active, &:focus {
     outline: 0;
   }
   &:link {

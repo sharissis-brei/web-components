@@ -1,0 +1,24 @@
+.cu-off-canvas-nav-container {
+	position: fixed;
+	top: 0;
+	left: -85%;
+	width: 85%;
+	height: 100%;
+	min-height: 450px; // Temp
+	overflow: hidden;
+	border-right: 1px solid #CCC; // Temp
+	z-index: 100000;
+	background-color: $white;
+	@include transition(all, 0.5s, ease-in-out);
+
+	&.open {
+		left: 0;
+
+		@include bp(m) {
+			left: -85%;
+			@include transition(all, 0s, ease-in-out);
+		}
+
+	}
+
+}

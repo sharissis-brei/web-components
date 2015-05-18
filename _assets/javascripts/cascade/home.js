@@ -8,6 +8,7 @@
 		cu_admission_area.initialize();
 		cu_news_events_nav_area.initialize();
 		smc_cta_tracker.initialize();
+		cu_off_canvas_nav.initialize();
 
 	});
 
@@ -215,7 +216,6 @@
 		} // end scroller
 
 	} // end cu_window_manager
-
 
 	// Contains the animation FX 
 	var cu_parallax_fx = {
@@ -848,7 +848,6 @@
 
 	} // end cu_hero_area
 
-
 	var cu_stories_area = {
 
 		initialize : function() {
@@ -1063,6 +1062,19 @@
 		}
 
 	}
+
+	var cu_off_canvas_nav = {
+
+		initialize : function() {
+
+			$('#js-cu-off-canvas-nav-trigger').on('click', function(event) {
+				event.preventDefault();
+				$('#js-cu-off-canvas-nav-container').toggleClass('open');
+			});
+
+		}
+
+	} // end cu_off_canvas_nav
 
 
 	/***************************************************

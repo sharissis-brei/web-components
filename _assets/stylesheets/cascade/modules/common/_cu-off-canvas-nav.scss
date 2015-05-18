@@ -1,0 +1,41 @@
+.cu-off-canvas-nav {
+
+	ul {
+		border-bottom: 1px solid darken($cu-light-grey, 10%);
+	}
+
+	li {
+		border-top: 1px solid darken($cu-light-grey, 10%);
+	}
+
+	a, .toggle {
+		height: 60px;
+		line-height: 60px;
+	}
+
+	a {
+		display: block;
+		padding: 0 1em;
+		position: relative;
+		font-size: 18px;
+		color: $grey2;
+
+		&:hover {
+			text-decoration: none;
+		}
+		
+	}
+
+	.toggle {
+		width: 60px;
+		text-align: center;
+		position: absolute;
+		top: 0;
+		right: 0;
+		background-color: lighten($cu-light-grey, 5%);
+		color: $grey;
+		font-weight: normal; /* Fallback */
+		font-weight: 400;
+	}
+
+}

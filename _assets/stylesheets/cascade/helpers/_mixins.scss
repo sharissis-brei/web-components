@@ -69,7 +69,7 @@
 	opacity: $i;
 }
 
-@mixin transition($sel: all,$time: 1s,$ease: linear) {
+@mixin transition($sel: all, $time: 1s, $ease: linear) {
 	-webkit-transition: $sel $time $time;
 	-moz-transition: $sel $time $time;
 	-o-transition: $sel $time $time;
