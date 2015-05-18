@@ -147,31 +147,31 @@ $(function () {
 
     $('#cse-search-form form input, #cse-search-form-small form input').removeAttr('disabled');
 
-    $('#cse-search-form form input, #cse-search-form-small form input').live('keydown', function(e){
+    // $('#cse-search-form form input, #cse-search-form-small form input').live('keydown', function(e){ // UNCOMMENT LATER
      
-        if ((e.which && e.which == 13) || (e.keyCode && e.keyCode == 13)) {
-            e.preventDefault();
-        }
-        $(this).css({background:'none'});
+    //     if ((e.which && e.which == 13) || (e.keyCode && e.keyCode == 13)) {
+    //         e.preventDefault();
+    //     }
+    //     $(this).css({background:'none'});
 
-    }); 
+    // }); 
 
-    $('#cse-search-form-small form input').live('focus', function(){
-        $('.rotatorContainer').css("visibility", "hidden");
-    });
+    // $('#cse-search-form-small form input').live('focus', function(){ // UNCOMMENT LATER
+    //     $('.rotatorContainer').css("visibility", "hidden");
+    // });
 
-    $('#cse-search-form-small form input').live('blur', function(){
-        $('.rotatorContainer').css("visibility", "visible");
-    });
+    // $('#cse-search-form-small form input').live('blur', function(){ // UNCOMMENT LATER
+    //     $('.rotatorContainer').css("visibility", "visible");
+    // });
 
-    $('#cse-search-form form input, #cse-search-form-small form input').live('keydown', function(e){
+    // $('#cse-search-form form input, #cse-search-form-small form input').live('keydown', function(e){ // UNCOMMENT LATER
         
-        if ((e.which && e.which == 13) || (e.keyCode && e.keyCode == 13)) {
-            BREI.Personalization.pushToRecentSearches($(this).val());
-            googleSearch($(this).val());
-        }
+    //     if ((e.which && e.which == 13) || (e.keyCode && e.keyCode == 13)) {
+    //         BREI.Personalization.pushToRecentSearches($(this).val());
+    //         googleSearch($(this).val());
+    //     }
 
-    });
+    // });
 
     $('#cse-search-form form input.gsc-search-button').click(function(){
         googleSearch($('#cse-search-form form input').val());

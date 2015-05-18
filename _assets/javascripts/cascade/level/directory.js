@@ -32,9 +32,9 @@ $(function () {
                 if (sessionStorage.keywords) {
                     directorySearchBox.value = sessionStorage.keywords;
                 }
-                directorySearchBox.onkeyup = function (e) {
-                    sessionStorage.keywords = this.value;
-                }
+                // directorySearchBox.onkeyup = function (e) { // UNCOMMENT LATER
+                //     sessionStorage.keywords = this.value;
+                // }
 
                 // All faculty checkbox session storage handled in onclick function
 

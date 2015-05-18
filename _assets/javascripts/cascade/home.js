@@ -239,7 +239,7 @@
 			* Undergraduate Admission
 			*************************/
 			this.$undergraduateAdmission = $("#undergraduateAdmission");	
-			this.admissionStartPX = this.$undergraduateAdmission.find('.statistics').offset().top;
+			// this.admissionStartPX = this.$undergraduateAdmission.find('.statistics').offset().top; // UNCOMMENT LATER
 
 			this.$undergraduateAdmission.find('.fade-elem').css('opacity', 0); // prep for fade in
 
@@ -247,7 +247,7 @@
 			* Graduate Admission
 			*************************/
 			this.$graduateAdmission = $("#graduateAdmission");
-			this.graduateAdmissionStartPX = this.$graduateAdmission.offset().top;
+			// this.graduateAdmissionStartPX = this.$graduateAdmission.offset().top; // UNCOMMENT LATER
 
 			this.process(); // in case we already scrolled
 		},
@@ -1052,12 +1052,12 @@
 
 	    // Keep the slide arrows on the edge of the browser window
 	    $(".flex-direction-nav li .flex-next").offset({ left: $("#container").outerWidth() - 43 });
-	    $(".flex-direction-nav li .flex-prev").offset({ left: $("#container").offset().left });
+	    // $(".flex-direction-nav li .flex-prev").offset({ left: $("#container").offset().left }); // UNCOMMENT LATER
 
 	    $(window).bind("resize", function ()
 	    {
 	        $(".flex-direction-nav li a.flex-next").offset({ left: $("#container").outerWidth() - 43 });
-	        $(".flex-direction-nav li a.flex-prev").offset({ left: $("#container").offset().left });
+	        // $(".flex-direction-nav li a.flex-prev").offset({ left: $("#container").offset().left }); // UNCOMMENT LATER
 	    });
 
 		}

@@ -83,10 +83,10 @@ $(function () {
     });
 
     // Pause the slider once the user interacts with the slider
-    $(".flex-direction-nav li a").live("click", function (event) {
-        g_mySlider.pause();
-        g_mySlider.resume = function () { };
-    });
+    // $(".flex-direction-nav li a").live("click", function (event) { // UNCOMMENT LATER
+    //     g_mySlider.pause();
+    //     g_mySlider.resume = function () { };
+    // });
 
     // Flex navigation hover 
     $('.flex-direction-nav li a').hover(

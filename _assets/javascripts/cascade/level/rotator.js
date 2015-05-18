@@ -318,12 +318,12 @@ $(function () {
         // Keep the slide arrows on the edge of the browser window
 
         $(".flex-direction-nav li .next").offset({ left: $("#container").outerWidth() - 43 });
-        $(".flex-direction-nav li .prev").offset({ left: $("#container").offset().left });
+        // $(".flex-direction-nav li .prev").offset({ left: $("#container").offset().left }); // UNCOMMENT LATER
 
         $(window).bind("resize", function () {
 
             $(".flex-direction-nav li a.next").offset({ left: $("#container").outerWidth() - 43 });
-            $(".flex-direction-nav li a.prev").offset({ left: $("#container").offset().left });
+            // $(".flex-direction-nav li a.prev").offset({ left: $("#container").offset().left }); // UNCOMMENT LATER
 
         });
 
@@ -335,10 +335,10 @@ $(function () {
     });
 
     // Pause the slider once the user interacts with the slider
-    $(".flex-direction-nav li a").live("click", function (event) {
-        g_mySlider.pause();
-        g_mySlider.resume = function () {};
-    });
+    // $(".flex-direction-nav li a").live("click", function (event) { // UNCOMMENT LATER
+    //     g_mySlider.pause();
+    //     g_mySlider.resume = function () {};
+    // });
 
     /* Mini-Rotator Code
     ------------------------------------------------------------------------------------------------*/

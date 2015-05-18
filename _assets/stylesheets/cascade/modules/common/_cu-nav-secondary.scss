@@ -43,7 +43,7 @@
 		&.selected a {
 			@include bp(wildcard-max, 700px) {
 				width: 45px;
-        color: $white;
+		        color: $white;
 			}
 		}
 		a {

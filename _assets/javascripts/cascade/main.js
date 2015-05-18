@@ -112,19 +112,19 @@ var main = chapman.main || {};
 		/**
 	     * Main Nav li:hover show/hide subNav
 	     */
-	    if(!Modernizr.csstransitions)
-	    {
-		    $('.mainNavLinks .has-dropdown').hoverIntent(
-	            function() 
-	            {
-	                $(this).children('.subNavLinks').addClass('is-visible');
-	            },
-	            function() 
-	            {
-	                $(this).children('.subNavLinks').removeClass('is-visible');
-	            }
-	        );
-		}
+	 //    if(!Modernizr.csstransitions) // UNCOMMENT LATER
+	 //    {
+		//     $('.mainNavLinks .has-dropdown').hoverIntent(
+	 //            function() 
+	 //            {
+	 //                $(this).children('.subNavLinks').addClass('is-visible');
+	 //            },
+	 //            function() 
+	 //            {
+	 //                $(this).children('.subNavLinks').removeClass('is-visible');
+	 //            }
+	 //        );
+		// }
 
 	    /**
 	     * Resources nav li:hover show/hide subNav
