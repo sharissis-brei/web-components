@@ -15,20 +15,49 @@
 		padding: 1.75em 1.25em;
 	}
 
-	.cu-off-canvas-nav {
+	.cu-off-canvas-links {
+		min-height: 1em;
 		margin-top: 2.5em;
+		position: relative;
 
-		.link-1, .link-2 {
+		.shifted & {
+
+			.level-1-link, .main-menu {
+				opacity: 0;
+			}
+
+			.level-2-link {
+				opacity: 1;
+			}
+
+		}
+
+		.level-1-link, .main-menu {
+			opacity: 1;
+		}
+
+		.level-1-link, .level-2-link, .main-menu {
 			text-transform: uppercase;
 			color: $grey2;
+			position: absolute;
+			@include transition(all, 0.5s, ease-in-out);
+
+			&:hover {
+				text-decoration: none;
+			}
+
 		}
 
-		.link-1 {
-			float: left;
+		.level-1-link {
+			right: 0;
 		}
 
-		.link-2 {
-			float: right;
+		.level-2-link, .main-menu {
+			left: 0;
+		}
+
+		.level-2-link {
+			opacity: 0;
 		}
 
 	}

@@ -1,21 +1,67 @@
 .cu-off-canvas-nav {
+	width: 200%;
+	position: relative;
+	left: 0;
+	@include transition(all, 0.5s, ease-in-out);
+
+	.shifted & {
+		left: -100%;
+	}
+
+	li {
+		border-top: 1px solid darken($cu-light-grey, 10%);
+	}
+
+	a {
+		color: $grey2;
+		&:hover {
+			text-decoration: none;
+		}
+	}
 
 	> ul {
+		width: 50%;
+		float: left;
 		border-bottom: 1px solid darken($cu-light-grey, 10%);
+		@include vendorize(box-sizing, border-box);
+		
+		&.level-1 {
+			border-right: 1px solid darken($cu-light-grey, 10%);
+		}
+
+		&.level-2 {
+			position: relative;
+			left: -1px;
+			border-left: 1px solid darken($cu-light-grey, 10%);
+		}
 
 		> li {
-			border-top: 1px solid darken($cu-light-grey, 10%);
 			display: block;
 			position: relative;
 			width: 100%;
 
 			> ul {
 				display: none;
+
+				> li {
+					background-color: lighten($cu-light-grey, 5%);
+					
+					a {
+						display: block;
+						font-size: 16px;
+						padding: 0.5em 1.325em;
+						color: $grey2-hover;
+					}
+
+				}
+
 			}
 
 			&.open {
 
-				a {
+				> a {
+					color: $grey;
+
 					&:before {
 						color: $cu-red;
 					}
@@ -37,14 +83,14 @@
 			> a {
 				display: table-cell;
 				vertical-align: middle;
-				padding: 0 70px 0 1em;
+				padding: 0 70px 0 1.25em;
 				position: relative;
 				font-size: 18px;
-				color: $grey2;
 				font-family: "proxima-nova-soft", "proxima-nova-soft-n4", sans-serif;
+				@include transition(all, 0.25s, ease-in-out);
 
 				&.has-icon {
-					padding: 0 70px 0 2.5em;
+					padding: 0 70px 0 2.75em;
 					text-indent: -28px;
 				}
 
@@ -62,10 +108,6 @@
 					display: inline-block;
 					margin-right: 5px;
 					width: 18px;
-				}
-
-				&:hover {
-					text-decoration: none;
 				}
 
 			}

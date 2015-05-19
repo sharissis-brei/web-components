@@ -1078,6 +1078,14 @@
 				$(this).parent().find('ul').slideToggle();
 			});
 
+			$('#js-level-2-link').on('click', function() {
+				$('#js-cu-off-canvas-nav-container').removeClass('shifted');
+			});
+
+			$('#js-level-1-link').on('click', function() {
+				$('#js-cu-off-canvas-nav-container').addClass('shifted');
+			});
+
 		}
 
 	} // end cu_off_canvas_nav
