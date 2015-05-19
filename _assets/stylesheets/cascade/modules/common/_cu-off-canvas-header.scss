@@ -42,6 +42,10 @@
 			position: absolute;
 			@include transition(all, 0.5s, ease-in-out);
 
+			.accent {
+				color: $theme-blue;
+			}
+
 			&:hover {
 				text-decoration: none;
 			}
