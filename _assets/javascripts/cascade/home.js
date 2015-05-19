@@ -1066,7 +1066,7 @@
 	var cu_off_canvas_nav = {
 
 		initialize : function() {
-			
+
 			$('#js-cu-off-canvas-nav-trigger, #js-cu-close-off-canvas-nav, #js-cu-off-canvas-overlay').on('click', function(event) {
 				event.preventDefault();
 				$('#js-cu-off-canvas-nav-container').toggleClass('open');
@@ -1074,7 +1074,8 @@
 			});
 
 			$('#js-cu-off-canvas-nav-container .toggle').on('click', function() {
-				$(this).parent().parent().toggleClass('open'); // Targets li
+				$(this).parent().toggleClass('open'); // Targets li
+				$(this).parent().find('ul').slideToggle();
 			});
 
 		}

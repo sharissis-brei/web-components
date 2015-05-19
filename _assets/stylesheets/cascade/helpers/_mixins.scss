@@ -8,7 +8,7 @@
 		@media (min-width: 1024px) { @content; }
 	}
 
-	@if $point == xl { // Large
+	@if $point == xl { // Extra Large
 		@media (min-width: 1200px) { @content; }
 	}
 

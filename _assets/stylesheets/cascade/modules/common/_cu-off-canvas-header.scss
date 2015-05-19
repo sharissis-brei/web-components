@@ -1,7 +1,7 @@
 .cu-off-canvas-header {
 	position: relative;
 	background-color: $cu-light-grey;
-	padding: 1.75em 1.25em;
+	padding: 1.75em 1.25em 1.25em;
 
 	img {
 		max-width: 87.5%;
@@ -13,6 +13,24 @@
 		top: 0;
 		right: 0;
 		padding: 1.75em 1.25em;
+	}
+
+	.cu-off-canvas-nav {
+		margin-top: 2.5em;
+
+		.link-1, .link-2 {
+			text-transform: uppercase;
+			color: $grey2;
+		}
+
+		.link-1 {
+			float: left;
+		}
+
+		.link-2 {
+			float: right;
+		}
+
 	}
 
 }

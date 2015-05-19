@@ -52,6 +52,7 @@ title: "Header"
                 </a>
             </li>
         </ul>
+
         <ul class="cu_nav_secondary cu_nav_menu cu_nav_selectable" style="display: none;" data-show-domain="blogs.chapman.edu">
             <li>
                 <a class="cu_nav_button" href="/business">
@@ -158,6 +159,7 @@ title: "Header"
                 </a>
             </li>
         </ul>
+
         <ul class="cu_nav_secondary cu_nav_menu cu_nav_selectable" style="display: none;" data-show-domain="www.chapman.edu">
             <li data-hide-path="/law"><a class="cu_nav_button" href="/future-students">Prospective Students</a></li>
             <li data-hide-path="/law"><a class="cu_nav_button" href="/students">Current Students</a></li>
@@ -172,6 +174,7 @@ title: "Header"
             <li data-show-path="/law"><a class="cu_nav_button" href="/law/employers">Employers</a></li>
             <li class="selected hidden-unless-default"><a class="cu_nav_button" href="#">Find information for...</a></li>
         </ul>
+
         <div id="cu_login_container" class="cu_nav_menu">
             <div id="cu_identity">
                 <svg viewbox="0 0 512 512">
@@ -241,6 +244,7 @@ title: "Header"
                 </li>
             </ul>
         </div>
+
         <div id="cu_search">
             <div id="cu_search_box">
                 <form action="//www.chapman.edu/search-results/index.aspx">
@@ -268,6 +272,7 @@ title: "Header"
                 </div>
             </div>
         </div>
+
     </div>
 
     <div id="js-cu-off-canvas-overlay" class="cu-off-canvas-overlay"></div>
@@ -275,37 +280,105 @@ title: "Header"
     <div id="js-cu-off-canvas-nav-container" class="cu-off-canvas-nav-container">
         
         <div class="cu-off-canvas-header">
-            <img src="/img/temp/off-canvas-header-img.png" alt="Argyros School of Business and Economics">
+            <img src="/img/temp/off-canvas-header-default.png" alt="Argyros School of Business and Economics">
             <span id="js-cu-close-off-canvas-nav" class="close">X</span>
+            <div class="cu-off-canvas-nav clearfix">
+                <span class="link-1">Link 1</span>
+                <span class="link-2">Link 2</span>
+            </div>
         </div>
 
         <div class="cu-off-canvas-nav">
             
             <ul>
                 <li>
-                    <a href="#" title="About">About<span class="toggle"><span>+</span></span></a>
+                    <a class="has-icon" href="#" title="The University">
+                        <svg viewbox="0 0 512 512">
+                            <use xlink:href="/img/omni-nav.svg#cu_window" />
+                        </svg>
+                        The University
+                    </a>
+                    <span class="toggle"><span>+</span></span>
+                    <ul>
+                        <li><a href="#" title="Academics">Academics</a></li>
+                        <li><a href="#" title="Admission">Admission</a></li>
+                        <li><a href="#" title="Arts">Arts</a></li>
+                        <li><a href="#" title="Athletics">Athletics</a></li>
+                        <li><a href="#" title="Research">Research</a></li>
+                    </ul>
                 </li>
                 <li>
-                    <a href="#" title="Faculty &amp; Research">Faculty &amp; Research<span class="toggle"><span>+</span></span></a>
+                    <a class="has-icon" href="#" title="Find information for...">
+                        <svg viewbox="0 0 512 512">
+                            <use xlink:href="/img/omni-nav.svg#user" />
+                        </svg>
+                        Find information for...
+                    </a>
+                    <span class="toggle"><span>+</span></span>
+                    <ul>
+                        <li><a href="#" title=""></a></li>
+                        <li><a href="#" title=""></a></li>
+                        <li><a href="#" title=""></a></li>
+                        <li><a href="#" title=""></a></li>
+                        <li><a href="#" title=""></a></li>
+                    </ul>
                 </li>
                 <li>
-                    <a href="#" title="Undergraduate Programs">Undergraduate Programs<span class="toggle"><span>+</span></span></a>
+                    <a class="has-icon icon icon-graduation" href="#" title="Degrees &amp; Programs">Degrees &amp; Programs</a>
                 </li>
                 <li>
-                    <a href="#" title="Graduate Programs">Graduate Programs<span class="toggle"><span>+</span></span></a>
+                    <a class="has-icon icon icon-library2" href="#" title="Schools &amp; Colleges">Schools &amp; Colleges</a>
+                    <span class="toggle"><span>+</span></span>
+                    <ul>
+                        <li><a href="#" title=""></a></li>
+                        <li><a href="#" title=""></a></li>
+                        <li><a href="#" title=""></a></li>
+                        <li><a href="#" title=""></a></li>
+                        <li><a href="#" title=""></a></li>
+                    </ul>
                 </li>
                 <li>
-                    <a href="#" title="Advising">Advising<span class="toggle"><span>+</span></span></a>
+                    <a class="has-icon" href="#" title="Events">
+                        <svg viewbox="0 0 512 512">
+                            <use xlink:href="/img/omni-nav.svg#calendar" />
+                        </svg>
+                        Events
+                    </a>
+                </li>
+
+                <!-- <li>
+                    <a href="#" title="About">About</a>
+                    <span class="toggle"><span>+</span></span>
                 </li>
                 <li>
-                    <a href="#" title="Career Services">Career Services<span class="toggle"><span>+</span></span></a>
+                    <a href="#" title="Faculty &amp; Research">Faculty &amp; Research</a>
+                    <span class="toggle"><span>+</span></span>
                 </li>
                 <li>
-                    <a href="#" title="Student Organizations">Student Organizations<span class="toggle"><span>+</span></span></a>
+                    <a href="#" title="Undergraduate Programs">Undergraduate Programs</a>
+                    <span class="toggle"><span>+</span></span>
                 </li>
                 <li>
-                    <a href="#" title="Alumni">Alumni<span class="toggle"><span>+</span></span></a>
+                    <a href="#" title="Graduate Programs">Graduate Programs</a>
+                    <span class="toggle"><span>+</span></span>
                 </li>
+                <li>
+                    <a href="#" title="Advising">Advising</a>
+                    <span class="toggle"><span>+</span></span>
+                </li>
+                <li>
+                    <a href="#" title="Career Services">Career Services</a>
+                    <span class="toggle"><span>+</span></span>
+                </li>
+                <li>
+                    <a href="#" title="Student Organizations">Student Organizations</a>
+                    <span class="toggle"><span>+</span></span>
+                </li>
+                <li>
+                    <a href="#" title="Alumni">Alumni</a>
+                    <span class="toggle"><span>+</span></span>
+                </li> -->
+
             </ul>
 
         </div>
