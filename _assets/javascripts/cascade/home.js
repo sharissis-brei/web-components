@@ -1066,10 +1066,15 @@
 	var cu_off_canvas_nav = {
 
 		initialize : function() {
-
-			$('#js-cu-off-canvas-nav-trigger').on('click', function(event) {
+			
+			$('#js-cu-off-canvas-nav-trigger, #js-cu-close-off-canvas-nav, #js-cu-off-canvas-overlay').on('click', function(event) {
 				event.preventDefault();
 				$('#js-cu-off-canvas-nav-container').toggleClass('open');
+				$('#js-cu-off-canvas-overlay').toggleClass('active');
+			});
+
+			$('#js-cu-off-canvas-nav-container .toggle').on('click', function() {
+				$(this).parent().parent().toggleClass('open'); // Targets li
 			});
 
 		}

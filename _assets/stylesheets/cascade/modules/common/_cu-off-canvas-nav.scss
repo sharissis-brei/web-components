@@ -6,6 +6,11 @@
 
 	li {
 		border-top: 1px solid darken($cu-light-grey, 10%);
+
+		&.open .toggle > span {
+			@include vendorize(transform, rotate(45deg));
+		}
+
 	}
 
 	a, .toggle {
@@ -23,7 +28,7 @@
 		&:hover {
 			text-decoration: none;
 		}
-		
+
 	}
 
 	.toggle {
@@ -36,6 +41,12 @@
 		color: $grey;
 		font-weight: normal; /* Fallback */
 		font-weight: 400;
+
+		> span {
+			display: block;
+			@include transition(all, 0.15s, ease-in-out);
+		}
+
 	}
 
 }
