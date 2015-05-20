@@ -1067,6 +1067,8 @@
 
 		initialize : function() {
 
+			cu_off_canvas_nav.syncLinkWidths();
+
 			$('#js-cu-off-canvas-nav-trigger, #js-cu-close-off-canvas-nav, #js-cu-off-canvas-overlay').on('click', function(event) {
 				event.preventDefault();
 				$('#js-cu-off-canvas-nav-container').toggleClass('open');
@@ -1085,6 +1087,17 @@
 			$('#js-level-1-link').on('click', function() {
 				$('#js-cu-off-canvas-nav-container').addClass('shifted');
 			});
+
+			$(window).on('resize', function() {
+				cu_off_canvas_nav.syncLinkWidths();
+			});
+
+		},
+
+		syncLinkWidths: function() {
+
+			var width = $('#js-cu-off-canvas-nav > ul').width();
+			$('#js-cu-off-canvas-nav > ul > li > a').css('width', width);
 
 		}
 
