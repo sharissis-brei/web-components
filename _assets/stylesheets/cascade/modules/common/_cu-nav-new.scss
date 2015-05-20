@@ -89,7 +89,6 @@
       -moz-box-sizing: border-box;
       box-sizing: border-box;
       list-style-type: none;
-      width: 175px;
       &.selected {
         z-index: 1;
         position: absolute;
@@ -101,9 +100,6 @@
           display: block;
         }
       }
-    }
-    &#cu_nav_domain {
-      width: 175px;
     }
     &.cu_nav_secondary {
       width: 430px;
@@ -118,15 +114,5 @@
   }
   div.cu_nav_menu {
     min-height: 55px;
-    z-index: 99090;
-    div.cu_dropdown_menu {
-      max-height: 0px;
-      padding: 0 20px;
-      overflow: hidden;
-    }
-    &.expanded div.cu_dropdown_menu {
-      max-height: 200px;
-      padding: 20px;
-    }
   }
 }

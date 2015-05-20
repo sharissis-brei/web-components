@@ -24,26 +24,33 @@
 
 			.level-1-link, .main-menu {
 				opacity: 0;
+				z-index: 1;
 			}
 
 			.level-2-link {
 				opacity: 1;
+				z-index: 2;
 			}
 
 		}
 
 		.level-1-link, .main-menu {
 			opacity: 1;
+			z-index: 2;
 		}
 
 		.level-1-link, .level-2-link, .main-menu {
 			text-transform: uppercase;
 			color: $grey2;
 			position: absolute;
-			@include transition(all, 0.5s, ease-in-out);
+			@include transition(opacity, 0.5s, ease-in-out);
 
 			.accent {
 				color: $theme-blue;
+			}
+
+			&.hidden {
+				display: none;
 			}
 
 			&:hover {
@@ -62,6 +69,7 @@
 
 		.level-2-link {
 			opacity: 0;
+			z-index: 1;
 		}
 
 	}
